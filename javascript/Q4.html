@@ -1,0 +1,22 @@
+<html>
+<head>
+<title></title>
+<script type="text/JavaScript" src="Application1.js">
+</script>
+<script type="text/JavaScript">
+function good()
+{
+ var tm=ret_time2(); //method already defined in external js file
+ alert(tm);
+ document.getElementById("timeDisp").innerHTML=tm;
+}
+</script>
+</head>
+<body>
+<input type="button" OnClick="good()" value="SET TIME IN DIV"></input>
+</br>
+<div id="timeDisp" style="background-color:yellow;position:relative;left:10;width:300;height:300; value="red">
+GOOD
+</div>
+</body>
+</html>

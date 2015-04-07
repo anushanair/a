@@ -1,0 +1,19 @@
+<html>
+<head><title>text change</title>
+<script type = "text/JavaScript">
+var n;
+function changex()
+{
+ n = document.getElementById("v1").value ;
+ document.getElementById("v2").value = n;
+}
+</script>
+
+</head>
+<body>
+<form>
+<input type= "text" id="v1" onChange = "changex()">
+<input type= "text" id="v2">
+</form>
+</body>
+</html>

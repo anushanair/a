@@ -1,0 +1,28 @@
+<html>
+<head>
+<title></title>
+<script type="text/JavaScript">
+var ref,str=1;
+function start()
+{
+  ref=setInterval(updateTime,1000);  
+}
+function updateTime()
+{
+  
+  document.getElementById("h1").innerHTML=str+"<br/>";
+  str=str+1;
+}
+function stoptimer()
+{
+  clearInterval(ref);
+}
+</script>
+</head>
+<body>
+<input type="button" onClick="start()" value="START TIMER"></input>
+<input type="button" onClick="stoptimer()" value="STOP TIMER"></input>
+<br/>
+<p align="center" id="h1"></p>
+</body>
+</html>

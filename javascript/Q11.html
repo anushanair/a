@@ -1,0 +1,31 @@
+<html>
+<head><title>Registration</title>
+<script type = "text/JavaScript">
+function validate()
+{
+	var x = document.forms["reg"]["fname"].value;
+	var y = document.forms["reg"]["age"].value;
+	if(x=="")
+	{
+		alert("name field is mandatory");
+		return false;
+	}
+	if(y<18)
+	{
+		alert("your age is below 18");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+
+<form name ="reg" action="aft_reg.html" onsubmit= "return validate()" method ="post">
+NAME: <input type ="text" name="fname"><br><br>
+COLLEGE: <input type ="text" name ="clg"><br><br>
+AGE: <input type = "text" name ="age"><br><br>
+<input type = "submit" name ="Submit">
+</form>
+
+</body>
+</html>
